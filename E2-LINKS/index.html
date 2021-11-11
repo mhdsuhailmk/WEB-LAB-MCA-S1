@@ -1,0 +1,414 @@
+<html>
+
+<head>
+
+<title>
+
+third page
+</title>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+<a href="#twc"> </a>
+
+<a href="#wac">WEB APPLICATION COMPONENTS</a><br>
+
+<a href="#twc">Types of Web Contents </a><br>
+
+<a href="#http">HTTP </a><br>
+
+<a href="#dwp"> What is a Dynamic Web Page?</a><br>
+
+<a href="#was">What Is an Application Server? </a><br>
+<a href="#wws">What is Web Security?  </a><br>
+
+<p id="lorem">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Client-Server Model</h2>
+
+The Client-server model is a distributed application structure that partitions task or workload between the providers of a resource or service, called servers, and service requesters called clients. In the client-server architecture, when the client computer sends a request for data to the server through the internet, the server accepts the requested process and deliver the data packets requested back to the client. Clients do not share any of their resources. Examples of Client-Server Model are Email, World Wide Web, etc.
+
+How the Client-Server Model works ?
+In this article we are going to take a dive into the Client-Server model and have a look at how the Internet works via, web browsers. This article will help us in having a solid foundation of the WEB and help in working with WEB technologies with ease.
+
+    Client: When we talk the word Client, it mean to talk of a person or an organization using a particular service. Similarly in the digital world a Client is a computer (Host) i.e. capable of receiving information or using a particular service from the service providers (Servers).
+    Servers: Similarly, when we talk the word Servers, It mean a person or medium that serves something. Similarly in this digital world a Server is a remote computer which provides information (data) or access to particular services.
+
+So, its basically the Client requesting something and the Server serving it as long as its present in the database.
+
+
+</p>
+
+<img src="801.png"  style="vertical-align:middle;margin:0px 550px">
+
+
+
+
+
+
+<h2>How the browser interacts with the servers ?</h2>
+There are few steps to follow to interacts with the servers a client.
+
+
+    User enters the URL(Uniform Resource Locator) of the website or file. The Browser then requests the DNS(DOMAIN NAME SYSTEM) Server.
+    DNS Server lookup for the address of the WEB Server.
+    DNS Server responds with the IP address of the WEB Server.
+    Browser sends over an HTTP/HTTPS request to WEB Server’s IP (provided by DNS server).
+    Server sends over the necessary files of the website.
+    Browser then renders the files and the website is displayed. This rendering is done with the help of DOM (Document Object Model) interpreter, CSS interpreter and JS Engine collectively known as the JIT or (Just in Time) Compilers.
+
+
+<br>
+
+<img src="8110.png" style="vertical-align:middle;margin:0px 520px">
+
+
+<br>
+
+
+
+Advantages of Client-Server model:
+
+    Centralized system with all data in a single place.
+    Cost efficient requires less maintenance cost and Data recovery is possible.
+    The capacity of the Client and Servers can be changed separately.
+
+Disadvantages of Client-Server model:
+
+    Clients are prone to viruses, Trojans and worms if present in the Server or uploaded into the Server.
+    Server are prone to Denial of Service (DOS) attacks.
+    Data packets may be spoofed or modified during transmission.
+    Phishing or capturing login credentials or other useful information of the user are common and MITM(Man in the Middle) attacks are common.
+
+<br>
+
+
+
+
+<h2 id="wac">Web application components</h2>
+<p >
+Before we start, let’s make sure we’re on the same page regarding the key technical web-related terms. Namely, the two structural web app components any web app consists of – client and server sides.
+
+A client is a user-friendly representation of a web app’s functionality that a user interacts with. Written in HTML, JavaScript and CSS, it exists within the user’s web browser and doesn’t need any specific OS/device-related adjustments.
+
+To build a server side you need PHP, Java, .NET, Python, Ruby on Rails or Node.js development skills. This side usually consists of at least two more parts: web server with app logic (or the main control center) and database (storage of all persistent data). If you scale up this side, it means that you increase the number of web servers and databases to boost your web app’s performance and stability. 
+
+</p>
+
+
+
+
+<br>
+
+<br>
+
+<h2 id="twc">Types of Web Contents</h2>
+
+
+<p>Here are a few examples of content types that you can include on your website:</p>
+<ul>
+
+   <li> Written content</li>
+    <li>Video and audio</li>
+    	<li>Blog postings</li>
+   <li> Blog subscription feeds and comments</li>
+    <li>E-mail newsletters</li>
+  <li>  Podcasts (audio and video)</li>
+  <li>  Webinars or other training</li>
+  <li>  Informational articles</li>
+ <li>   Case studies</li>
+ <li>   Product reviews and testimonials</li>
+ <li>   E-books and white papers</li>
+ <li>   PDF files</li>
+ <li>   Social media postings and comments</li>
+ <li>   Twitter or micro blog postings</li>
+ <li>   Press releases (internal and external)</li>
+  <li>  Slide presentations</li>
+  <li>  Mobile apps</li>
+  <li>  About Us pages</li>
+    <li>Contact Us pages</li>
+
+
+
+</ul>
+
+
+
+<h2 id="http">HTTP (Hyper Text Transfer Protocol)</h2>
+
+
+
+<p>
+The Hypertext Transfer Protocol (HTTP) is application-level protocol for collaborative, distributed, hypermedia information systems. It is the data communication protocol used to establish communication between client and server.
+
+HTTP is TCP/IP based communication protocol, which is used to deliver the data like image files, query results, HTML files etc on the World Wide Web (WWW) with the default port is TCP 80. It provides the standardized way for computers to communicate with each other. </p>
+
+
+
+<img src="ht.png">
+
+
+
+
+
+
+<br>
+<p>
+
+The Basic Characteristics of HTTP (Hyper Text Transfer Protocol):</p>
+
+<ul>
+
+<li>    It is the protocol that allows web servers and browsers to exchange data over the web.</li>
+<li>    It is a request response protocol.</li>
+<li>    It uses the reliable TCP connections by default on TCP port 80.</li>
+<li>    It is stateless means each request is considered as the new request. In other words, server doesn't recognize the user by default.</li>
+
+
+
+
+<p>The Basic Features of HTTP (Hyper Text Transfer Protocol):</p>
+
+<p>There are three fundamental features that make the HTTP a simple and powerful protocol used for communication:</p>
+
+   <p><b> HTTP is media independent:</b> It specifies that any type of media content can be sent by HTTP as long as both the server and the client can handle the data content.
+
+   <p><b>HTTP is connectionless:</b> It is a connectionless approach in which HTTP client i.e., a browser initiates the HTTP request and after the request is sent the client disconnects from server and waits for the response.</p>
+
+   <p> <b>HTTP is stateless:</b> The client and server are aware of each other during a current request only. Afterwards, both of them forget each other. Due to the stateless nature of protocol, neither the client nor the server can retain the information about different request across the web pages.</p>
+
+
+<b>The below diagram represents the basic architecture of web application and depicts where HTTP stands:</b>
+
+<br>
+
+
+<br>
+
+<img src="ar.png"  style="vertical-align:middle;margin:0px 520px">
+
+
+<br>
+
+<p>
+HTTP is request/response protocol which is based on client/server based architecture. In this protocol, web browser, search engines, etc. behave as HTTP clients and the Web server like Servlet behaves as a server</p>
+
+
+
+
+
+
+
+
+
+<br>
+
+<h2>
+HTTP Requests</h2>
+<p><br>
+The request sent by the computer to a web server, contains all sorts of potentially interesting information; it is known as HTTP requests.
+</p>
+<b>
+The HTTP client sends the request to the server in the form of request message which includes following information:</b>
+<br><br>
+<ul>
+
+
+  <li>  The Request-line </li>
+   <li>  The analysis of source IP address, proxy and port</li>
+   <li>  The analysis of destination IP address, protocol, port and host</li>
+    <li> The Requested URI (Uniform Resource Identifier)</li>
+    <li> The Request method and Content</li>
+    <li> The User-Agent header</li>
+     <li>The Connection control header</li>
+    <li> The Cache control header
+</li>
+</ul>
+
+
+<br>
+
+
+<img src="req.jpg"   style="vertical-align:middle;margin:0px 520px">
+
+<br>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+<table align="center" border="1">
+<tr>
+<th>HTTP Request</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><strong>GET</strong></td>
+<td>Asks to get the resource at the requested URL.</td>
+</tr>
+<tr>
+<td><strong>POST</strong></td>
+<td>Asks the server to accept the body info attached. It is like GET request with extra info sent with the request.</td>
+</tr>
+<tr>
+<td><strong>HEAD</strong></td>
+<td>Asks for only the header part of whatever a GET would return. Just like GET but with no body.</td>
+</tr>
+<tr>
+<td><strong>TRACE</strong></td>
+<td>Asks for the loopback of the request message, for testing or troubleshooting.</td>
+</tr>
+<tr>
+<td><strong>PUT</strong></td>
+<td>Says to put the enclosed info (the body) at the requested URL.</td>
+</tr>
+<tr>
+<td><strong>DELETE</strong></td>
+<td>Says to delete the resource at the requested URL.</td>
+</tr>
+<tr>
+<td><strong>OPTIONS</strong></td>
+<td>Asks for a list of the HTTP methods to which the thing at the request URL can respond</td>
+</tr>
+</table>
+
+
+
+
+
+<br>
+<H2 id="dwp">
+What is a Dynamic Web Page?</h2>
+
+<p>
+A dynamic web page is a web page that displays different content each time it's viewed. For example, the page may change with the time of day, the user that accesses the webpage, or the type of user interaction. There are two types of dynamic web pages.
+</P>
+
+<b>Client-Side Scripting</b>
+<p>
+Web pages that change in response to an action within that web page, such as a mouse or a keyboard action, use client-side scripting.
+
+Client-side scripts generate client-side content. Client-side content is content that's generated on the user's computer rather than the server. In these cases, the user's web browser would download the web page content from the server, process the code that's embedded in the web page, and then display the updated content to the user.
+
+
+
+Scripting languages such as JavaScript and Flash allow a web page to respond to client-side events.
+</p>
+<b>Server-Side Scripting</b>
+<p>
+Web pages that change when a web page is loaded or visited use server-side scripting. Server-side content is content that's generated when a web page is loaded. For example, login pages, forums, submission forms, and shopping carts, all use server-side scripting since those web pages change according to what is submitted to it.
+
+Scripting languages such as PHP, ASP, ASP.NET, JSP, ColdFusion and Perl allow a web page to respond to submission events.
+</p>
+
+
+
+<br>
+
+
+
+<h2 id="was">
+What Is an Application Server?</h2>
+
+
+<p>
+Applications come in all shapes, sizes, and use cases. In a world where we rely on a host of critical business processes, application servers are the high-powered computers providing application resources to users and web clients.
+
+Application servers physically or virtually sit between database servers storing application data and web servers communicating with clients. App servers and akin middleware are the operating systems supporting an application’s development and delivery. Whether it’s a desktop, mobile, or web app, application servers play a critical role in connecting a world of devices.
+
+We look at how application servers fit into a network’s service architecture, how app servers support web servers, native applications, and mobile apps, and the current state of application servers in the 2020s.
+</p>
+
+
+
+
+
+
+
+
+<h2 id="wws">What is Web Security? </h2>
+
+
+<p>  
+
+    Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.
+
+Web Security
+
+Websites and web applications are just as prone to security breaches as physical homes, stores, and government locations. Unfortunately, cybercrime happens every day, and great web security measures are needed to protect websites and web applications from becoming compromised.
+
+That’s exactly what web security does – it is a system of protection measures and protocols that can protect your website or web application from being hacked or entered by unauthorized personnel. This integral division of Information Security is vital to the protection of websites, web applications, and web services. Anything that is applied over the Internet should have some form of web security to protect it.</p>
+<br>
+
+<a href="#twc"> </a>
+
+<a href="#wac">WEB APPLICATION COMPONENTS</a><br>
+
+<a href="#twc">Types of Web Contents </a><br>
+
+<a href="#http">HTTP </a><br>
+
+<a href="#dwp"> What is a Dynamic Web Page?</a><br>
+
+<a href="#was">What Is an Application Server? </a><br>
+<a href="#wws">What is Web Security?  </a><br>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<h3>REFERENCES:</h3>
+<a href="https://www.geeksforgeeks.org/html-tutorials/"> GEEKS FOR GEEKS</a><br>
+<a href="https://www.goodfirms.co/glossary/web-security/">GOODFIRMS</a><br>
+
+<a href="https://www.serverwatch.com/guides/application-server/"</a>SERVERWATCH<br>
+
+</body>
+
+
+</html>
